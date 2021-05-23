@@ -1,3 +1,3 @@
 # springcoarse
 
-This repo contains the examples for the troning for Spring and Hibernate
+This repo contains the examples for the training for Spring and Hibernate
