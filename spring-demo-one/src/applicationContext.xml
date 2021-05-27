@@ -19,9 +19,12 @@
     	<property name="printedLoggerLevel" value="FINE"/>
     </bean>
     
+    <!-- placeholder for property file -->
+    <context:property-placeholder location="classpath:sport.properties"/>
+    
     <!-- define the dependency -->
     <bean id="myFortuneService"
-    	class="com.luv2code.springdemo.HappyFortuneService">
+    	class="com.luv2code.springdemo.MightyFortuneService">
     </bean>
     
     <bean id="myCoach" 
@@ -38,8 +41,8 @@
 		 <property name="fortuneService" ref="myFortuneService" />
 		 
 		 <!--  inject literal values -->
-		 <property name="emailAddress" value="ron@a.nl" />
-		 <property name="team" value="The Supermen" />
+		 <property name="emailAddress" value="${foo.email}" />
+		 <property name="team" value="${foo.team}" />
 		 
  	</bean>
     
