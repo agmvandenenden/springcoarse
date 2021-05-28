@@ -25,7 +25,8 @@
     </bean>
     
     <bean id="myCoach" 
-    	class="com.luv2code.springdemo.TrackCoach">
+    	class="com.luv2code.springdemo.TrackCoach"
+    	scope="prototype">
 
 		 <!-- setup constructor injection -->
 		 <constructor-arg ref="myFortuneService"/>   
